@@ -15,7 +15,7 @@ import {
   star,
 } from "../assets";
 
-export const navLinks = [
+export const navLinks: { id: string; title: string }[] = [
   {
     id: "home",
     title: "Home",
@@ -34,7 +34,12 @@ export const navLinks = [
   },
 ];
 
-export const features = [
+export const features: {
+  id: string;
+  icon: string;
+  title: string;
+  content: string;
+}[] = [
   {
     id: "feature-1",
     icon: star,
@@ -58,7 +63,13 @@ export const features = [
   },
 ];
 
-export const feedback = [
+export const feedback: {
+  id: string;
+  content: string;
+  title: string;
+  name: string;
+  img: string;
+}[] = [
   {
     id: "feedback-1",
     content:
@@ -85,7 +96,7 @@ export const feedback = [
   },
 ];
 
-export const stats = [
+export const stats: { id: string; title: string; value: string }[] = [
   {
     id: "stats-1",
     title: "User Active",
@@ -103,7 +114,10 @@ export const stats = [
   },
 ];
 
-export const footerLinks = [
+export const footerLinks: {
+  title: string;
+  links: { name: string; link: string }[];
+}[] = [
   {
     title: "Useful Links",
     links: [
@@ -169,7 +183,7 @@ export const footerLinks = [
   },
 ];
 
-export const socialMedia = [
+export const socialMedia: { id: string; icon: string; link: string }[] = [
   {
     id: "social-media-1",
     icon: instagram,
@@ -192,7 +206,7 @@ export const socialMedia = [
   },
 ];
 
-export const clients = [
+export const clients: { id: string; logo: string }[] = [
   {
     id: "client-1",
     logo: airbnb,
