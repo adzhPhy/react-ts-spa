@@ -1,4 +1,25 @@
-const styles = {
+interface StylesProps {
+  boxWidth: string;
+  heading2: string;
+  paragraph: string;
+  flexCenter: string;
+  flexStart: string;
+  paddingX: string;
+  paddingY: string;
+  padding: string;
+  marginX: string;
+  marginY: string;
+}
+
+interface LayoutProps {
+  section: string;
+  sectionReverse: string;
+  sectionImgReverse: string;
+  sectionImg: string;
+  sectionInfo: string;
+}
+
+const styles: StylesProps = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
   heading2:
@@ -17,7 +38,7 @@ const styles = {
   marginY: "sm:my-16 my-6",
 };
 
-export const layout = {
+export const layout: LayoutProps = {
   section: `flex md:flex-row flex-col ${styles.paddingY}`,
   sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
 
